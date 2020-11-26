@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css-reset.css">
+    <script src="https://kit.fontawesome.com/d8ca432759.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <div class="logo"> 
+                <span class="highlight">ABC CORP </span>
+                <span>Largest Mobile Phone Dealer</span>
+            </div>
+            <nav class="mobile-nav">
+                <a href="index.html" class="myButton">Home</a>
+                <a href="product.html" class="myButton">Product Page</a>
+                <a href="form.html" class="myButton">Contact Form</a>
+            </nav>
+
+            <div class="mob-wrapper">
+                <i class="fas fa-bars burgermenu" id="burgermenu" style="width: 40px;"></i>
+
+                <div class="mob-nav" id="mob-nav">
+                    <a href="index.html" class="navbutton">About</a>
+                    <a href="product.html" class="navbutton">Pricing</a>
+                    <a href="form.html" class="navbutton">Contact</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+
+        <!-- Product Box -->
+        <div class="col">
+
+            <img src="apple-iphone-11-128gb_1-removebg-preview.png" alt="">
+
+            <div class="content">
+                <h2>iPhone XS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quas veniam, quisquam consequatur minima totam aut libero, deleniti blanditiis fugit molestiae nemo soluta aliquid optio asperiores vitae quibusdam. Ab, reiciendis!</p>
+
+                <!--Price and Buy Now Button-->
+                <div class="card-footer">
+                    <h2>₹ 1,39,000.00</h2>
+                    <a href="#" class="myButton">Buy Now</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Product Box -->
+        <div class="col">
+            <img src="apple-iphone-11-128gb_1-removebg-preview.png" alt="">
+            <div class="content">
+                <h2>Pixel 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quas veniam, quisquam consequatur minima totam aut libero, deleniti blanditiis fugit molestiae nemo soluta aliquid optio asperiores vitae quibusdam. Ab, reiciendis!</p>
+
+                <!--Price and Buy Now Button-->
+                <div class="card-footer">
+                    <h2>₹ 75,000.00</h2>
+                    <a href="#" class="myButton">Buy Now</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Product Box -->
+        <div class="col">
+            <img src="apple-iphone-11-128gb_1-removebg-preview.png" alt="">
+            <div class="content">
+                <h2>Huawei Mate20</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quas veniam, quisquam consequatur minima totam aut libero, deleniti blanditiis fugit molestiae nemo soluta aliquid optio asperiores vitae quibusdam. Ab, reiciendis!</p>
+
+                <!--Price and Buy Now Button-->
+                <div class="card-footer">
+                    <h2>₹ 80,000.00</h2>
+                    <a href="#" class="myButton">Buy Now</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Product Box -->
+        <div class="col">
+            <img src="apple-iphone-11-128gb_1-removebg-preview.png" alt="">
+            <div class="content">
+                <h2>iPhone XS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quas veniam, quisquam consequatur minima totam aut libero, deleniti blanditiis fugit molestiae nemo soluta aliquid optio asperiores vitae quibusdam. Ab, reiciendis!</p>
+
+                <!--Price and Buy Now Button-->
+                <div class="card-footer">
+                    <h2>$1200</h2>
+                    <a href="#" class="myButton">Buy Now</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Product Box -->
+        <div class="col">
+            <img src="apple-iphone-11-128gb_1-removebg-preview.png" alt="">
+            <div class="content">
+                <h2>iPhone XS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quas veniam, quisquam consequatur minima totam aut libero, deleniti blanditiis fugit molestiae nemo soluta aliquid optio asperiores vitae quibusdam. Ab, reiciendis!</p>
+
+                <!--Price and Buy Now Button-->
+                <div class="card-footer">
+                    <h2>$1200</h2>
+                    <a href="#" class="myButton">Buy Now</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Product Box -->
+        <div class="col">
+            <img src="apple-iphone-11-128gb_1-removebg-preview.png" alt="">
+            <div class="content">
+                <h2>iPhone XS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quas veniam, quisquam consequatur minima totam aut libero, deleniti blanditiis fugit molestiae nemo soluta aliquid optio asperiores vitae quibusdam. Ab, reiciendis!</p>
+
+                <!--Price and Buy Now Button-->
+                <div class="card-footer">
+                    <h2>$1200</h2>
+                    <a href="#" class="myButton">Buy Now</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        let burgermenu = document.getElementById('burgermenu');
+        burgermenu.addEventListener('click',function() {
+            let temp = document.getElementById('mob-nav').style.display;
+            if(temp==='none') document.getElementById('mob-nav').style.display = 'block';
+            else
+            document.getElementById('mob-nav').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

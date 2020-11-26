@@ -1,0 +1,133 @@
+body{
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #E9ECEF;
+}
+main{
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 1024px;
+    background-color: #E9ECEF;
+    border: 2px solid black;
+}
+
+/*form designing*/
+form{
+    width: 98%;
+}
+.formBox{
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.formBox label{
+    display: none;
+}
+.icon{
+    display: none;
+}
+select, option, input, label, button{
+    padding: 0.2rem 1rem;
+    font-size: 1.2rem;
+    color: inherit;
+}
+h2{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/*header designing*/
+a{
+    text-decoration:none;
+}
+.header-container{
+    max-width: 100%;
+    background-color: #F1F1F1;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header{
+    max-width: 100%;
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .myButton {
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+    font-size: 0.875rem;
+  }
+  .highlight{
+    font-weight: 700;
+    color: mediumpurple;
+    font-size: 20px;
+  }
+  .mob-wrapper{
+      display: none;
+  }
+
+@media all and (min-width: 500px){
+    .formBox label{
+        display: block;
+    }
+}
+
+@media all and (min-width: 600px){
+    .formBox{
+        flex-direction: row;
+    }
+    .formBox label{
+        flex-basis: 9rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .formBox input,
+    .formBox select{
+        
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .formBox button{
+        margin: 0.2rem 1rem;
+    }
+    .icon{
+        display: inline-block;
+        padding-top: 5px;
+        padding-right: 10px;
+    }
+    
+}
+
+ 
+@media (max-width: 768px){
+    /*header media queries*/
+    nav{
+        display: none;
+    }
+    .mob-wrapper{
+        display: block;
+        padding-right:30px;
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+    .navbutton{
+        display: block;
+        background-color: #d3cdf1;
+        padding: 15px 30px;
+        margin-left: -20px;
+        text-align: center;
+        border: 1px dotted black;
+        font-size: 0.875rem;
+    }
+  }

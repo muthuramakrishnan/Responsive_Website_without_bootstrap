@@ -1,0 +1,136 @@
+body{
+    font-family: 'Asap Condensed', sans-serif;
+    color: black;
+    font-weight: 300;
+  }
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 500px;
+  }
+
+
+  /*Main heading*/
+  .jumbotron{
+    padding: 4rem 1rem;
+    min-height: 200px;
+    background-color: #d3cdf1;
+    text-align: center;
+  }
+  .jumbotron h1{
+      line-height: 1.7;
+      font-weight: 700;
+      font-size: 4.5rem;
+  }
+  .jumbotron p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    
+  }
+  a{
+      text-decoration: none;
+      display: inline-block;
+  }
+  .btn {
+    margin: 1rem 0;
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: auto;
+    color: white;
+    border-radius: 5%;
+  }
+  .btn-green{
+      background-color: green;
+  }
+  .btn-blue{
+    background-color: blue;
+    padding: 10px 25px;
+  }
+
+
+  /*cards design and FLEXBOX*/
+  .cards{
+      background-color: #F1F1F1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .card{
+      margin: 2rem 1.2rem;
+      width: 29%;
+      /* flex-basis: 30%; */
+  }
+  .card h2{
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 2.0rem;
+    margin-bottom: 0.5rem;
+  }
+  .card p{
+      text-align: justify;
+      line-height: 1.2;
+  }
+  .header-container{
+    max-width: 100%;
+    background-color: #F1F1F1;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header{
+    max-width: 100%;
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .myButton {
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+  }
+  .highlight{
+    font-weight: 700;
+    color: mediumpurple;
+    font-size: 20px;
+  }
+  .mob-wrapper{
+      display: none;
+  }
+ 
+
+@media (max-width: 992px){
+    .card{
+        width: 44%;
+    }
+} 
+@media (max-width: 768px){
+    .card{
+        width: 100%;
+        margin: 1rem 0.5rem;
+    }
+    nav{
+        display: none;
+    }
+    .mob-wrapper{
+        display: block;
+        padding-right:30px;
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+    .navbutton{
+        display: block;
+        background-color: #d3cdf1;
+        padding: 15px 30px;
+        margin-left: -20px;
+        text-align: center;
+        border: 1px dotted black;
+    }
+}
